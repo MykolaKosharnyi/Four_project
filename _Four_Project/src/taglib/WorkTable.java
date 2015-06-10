@@ -44,7 +44,6 @@ public class WorkTable extends TagSupport {
 	            out.println("<TD>Adress</TD>");
 	            out.println("<TD>Id petiotin</TD>");
 	            out.println("<TD>Id brigade</TD>");
-//	            out.println("<TD> </TD>");
 	            out.println("</TR>");
 	            
 	            for(Work w: allWorks){
@@ -56,8 +55,7 @@ public class WorkTable extends TagSupport {
 		            out.println("<TD>" + w.getAdress() + "</TD>");
 		            out.println("<TD>" + w.getIdPetition() + "</TD>");
 		            out.println("<TD>" + w.getIdBrigade() + "</TD>");
-					
-//		            out.println("<TD><a href='jsp.admin/admin_delete_work.jsp?id=" + w.getId() + "' /> delete</a></TD>");
+		            
 		            out.println("</TR>");
 	            } 
 	            out.println("</TABLE>");

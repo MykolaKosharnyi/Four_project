@@ -40,11 +40,11 @@ public class UserChangePetition extends TagSupport {
             out.println("<TD>Scale work</TD>");
             out.println("<TD>Time</TD>");
             out.println("</TR>");
-//--------------------------------------------------------------------------------------------	
+	
             out.println("<TR>");
 			out.println("<input type=\"hidden\" name=\"id\" value=" + petition.getId() + ">");
             out.println("<TD>" + petition.getId() + "</TD>");
-//--------------------------------------------------------------------------------------------
+
             out.println("<TD>");
             out.println("<select name=\"ExpressService\" >");
             for(ExpressService es : ExpressService.values()){
@@ -57,7 +57,7 @@ public class UserChangePetition extends TagSupport {
             }
             out.println("</select>");
             out.println("</TD>");
- //-------------------------------------------------------------------------------------------          
+          
             out.println("<TD>");
             out.println("<select name=\"ScaleWork\" >");
             for(ScaleWork sw : ScaleWork.values()){
@@ -70,7 +70,7 @@ public class UserChangePetition extends TagSupport {
             }
             out.println("</select>");
             out.println("</TD>");
- //---------------------------------------------------------------------------------------------       
+       
             out.println("<TD>");
             Date gc = new Date(petition.getTime()); 
             out.println("month - " + "<input type=\"text\" name=\"month\" value=" + gc.getMonth() + ">" +

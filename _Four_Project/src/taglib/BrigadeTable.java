@@ -38,7 +38,6 @@ public class BrigadeTable extends TagSupport{
 	            out.println("<TR valign=\"top\">");
 	            out.println("<TD>Id</TD>");
 	            out.println("<TD>Id Employee</TD>");
-//	            out.println("<TD> </TD>");
 	            out.println("</TR>");
 	            
 	            for(Brigade b: allBrigade){
@@ -46,7 +45,6 @@ public class BrigadeTable extends TagSupport{
 		            out.println("<TD>" + b.getId() + "</TD>");
 		            out.println("<TD>" + b.getIdEmployee() + "</TD>");
 					
-//		            out.println("<TD><a href='jsp.admin/admin_delete_brigade.jsp?id=" + b.getId() + "' /> delete</a></TD>");
 		            out.println("</TR>");
 	            } 
 	            out.println("</TABLE>");

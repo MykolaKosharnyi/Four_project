@@ -36,44 +36,8 @@ public class LoginCommand implements Command {
 			// если зашел admin
 			logger.info("user is ckecking");
 			if ("admin".equals(login)) {
-//
-//				response.setContentType("text/html");
-//				response.setCharacterEncoding("UTF-8");
-//				logger.info("user is admin");
-//
-//				HttpSession session = request.getSession();
-//
-//				JDBCDaoFactory factory = new JDBCDaoFactory();
-//				
-//				List<Tenant> allTenants = factory.createTenantDao().findAll();
-//				for (Tenant t : allTenants) {
-//					"admin".equals(t.getLogin());
-//					allTenants.remove(t);
-//					break;
-//				}
-//				session.setAttribute("tenants",  allTenants);
-//				logger.info("tenants:" + allTenants);
-//				
-//				List<Petition> petitions = factory.createPetitionDao().findAll();
-//				session.setAttribute("petitions", petitions);
-//				logger.debug("petitions:" + petitions);	
-//				
-//				List<Work> works = factory.createWorkDao().findAll();
-//				session.setAttribute("works", works);
-//				logger.debug("works:" + works);
-//
-//				List<Employee> employees = factory.createEmployeeDao().findAll();
-//				session.setAttribute("employees", employees);
-//				logger.debug("employees:" + employees);
-//				
-//				List<Brigade> brigades = factory.createBrigadeDao().findAll();
-//				session.setAttribute("brigades", brigades);
-//				logger.debug("brigades:" + brigades);
-//
-//				// setting session to expiry in 30 mins
-//				session.setMaxInactiveInterval(30 * 60);
-//
-//				// определение пути к user_form.jsp
+
+				// определение пути к admin.jsp
 				page = ConfigurationManager.getInstance().getProperty(ConfigurationManager.ADMIN_PAGE_PATH);
 			} else {
 				// все остальные пользователи

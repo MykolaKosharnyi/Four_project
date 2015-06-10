@@ -30,5 +30,4 @@ public class AdminCommand implements Command {
 		}
 		return page;
 	}
-
 }

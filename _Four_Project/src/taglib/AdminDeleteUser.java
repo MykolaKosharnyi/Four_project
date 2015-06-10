@@ -32,7 +32,6 @@ public class AdminDeleteUser extends TagSupport{
 			logger.error(e.getMessage());
 		}
 
-		
         return SKIP_BODY;
     }
 }

@@ -19,12 +19,10 @@ public abstract class DaoFactory {
 	    public static DaoFactory getInstance(){
 	        try {
 	            Properties config = new Properties();
-	            //config.load( new FileInputStream("./WEB-INF/classes/dao.properties"));
 	            return (DaoFactory) Class.forName(config.getProperty("dao.factory", "dao.jdbc.JDBCDaoFactory")).newInstance();
 	        } catch (Exception ex) {
 	            logger.error("Exception: " + ex);
 	            return null;
 	        }
-	 
 	    }
 	}
